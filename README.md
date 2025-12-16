@@ -46,3 +46,11 @@
 
 # Результаты
 Результатом работы является сам код, файл с результатами и экспериментальные данные по быстродействию работы написанного кода при изменении числа worker-ов / частей, на которые разбивается файл
+
+# Полезные Web UI (на хосте)
+
+- **HDFS NameNode**: `http://localhost:9870`
+- **HDFS DataNode**: `http://localhost:9864`
+- **YARN ResourceManager**: `http://localhost:8088`
+- **YARN NodeManager**: `http://localhost:8042`
+- **MapReduce JobHistory**: `http://localhost:8188`
