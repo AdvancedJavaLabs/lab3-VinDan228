@@ -1,0 +1,29 @@
+version: 3
+
+tasks:
+  up:
+    desc: "Start docker compose"
+    cmds:
+      - docker compose up -d
+
+  down:
+    desc: "Stop docker compose"
+    cmds:
+      - docker compose down
+
+  csv:
+    desc: "Upload into HDFS"
+    cmds:
+      - bash scripts/hdfs_put_csv.sh ./csv /input/sales
+
+  run:
+    desc: "Run MapReduce job"
+    cmds:
+      - bash scripts/run_job.sh --input /input/sales --output /output/sales_result --reducers 2 --map-threads 4
+      - bash scripts/fetch_result.sh --output /output/sales_result --local results/result.tsv
+
+  default:
+    desc: "csv + run"
+    cmds:
+      - task csv
+      - task run

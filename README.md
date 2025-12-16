@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/uyodabcP)
 ## Лабораторная работа: Реализация MapReduce для анализа данных о продажах с ипользованием HADOOP!!!
 # Цель работы
 
@@ -45,3 +46,11 @@
 
 # Результаты
 Результатом работы является сам код, файл с результатами и экспериментальные данные по быстродействию работы написанного кода при изменении числа worker-ов / частей, на которые разбивается файл
+
+# Полезные Web UI (на хосте)
+
+- **HDFS NameNode**: `http://localhost:9870`
+- **HDFS DataNode**: `http://localhost:9864`
+- **YARN ResourceManager**: `http://localhost:8088`
+- **YARN NodeManager**: `http://localhost:8042`
+- **MapReduce JobHistory**: `http://localhost:8188`
